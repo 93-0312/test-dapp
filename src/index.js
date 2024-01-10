@@ -1469,7 +1469,7 @@ const initializeFormElements = () => {
    */
 
   createToken.onclick = async () => {
-    const _initialAmount = 10;
+    const _initialAmount = 5000000;
     const _tokenName = 'TST';
 
     try {
@@ -1549,7 +1549,7 @@ const initializeFormElements = () => {
   approveTokens.onclick = async () => {
     const result = await hstContract.approve(
       approveTokensToInput.value,
-      `${7 * 10 ** decimalUnitsInput.value}`,
+      `${50000 * 10 ** decimalUnitsInput.value}`,
       {
         from: accounts[0],
         gasLimit: 60000,
